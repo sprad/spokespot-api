@@ -11,7 +11,7 @@ RSpec.describe "Bike Rack API", :type => :request do
       FactoryGirl.create(:metro_center_bike_rack)
       FactoryGirl.create(:columbia_heights_bike_rack)
 
-      get '/bike_racks', {}, { 'Accept' => Mime::JSON }
+      get '/v1/bike_racks', {}, { 'Accept' => Mime::JSON }
 
       body = json(response.body)
       bike_rack_names = body.map { |rack| rack[:name] }
