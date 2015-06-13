@@ -1,0 +1,11 @@
+json.array!(@bike_racks,
+  :name,
+  :address,
+  :city,
+  :state,
+  :zip_code,
+  :count,
+  :type,
+  :latitude,
+  :longitude
+) 

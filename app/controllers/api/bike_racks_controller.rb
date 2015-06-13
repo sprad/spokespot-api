@@ -1,7 +1,10 @@
 module API
   class BikeRacksController < ApplicationController
+    respond_to :json
+
     def index
-      render json: BikeRack.all
+      @bike_racks = BikeRack.limit(10)
     end
+
   end
 end
