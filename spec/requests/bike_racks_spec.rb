@@ -15,8 +15,8 @@ RSpec.describe "Bike Rack API", :type => :request do
 
       expect(response).to have_http_status(:success)
 
-      body = JSON.parse(response.body)
-      bike_rack_names = body.map { |rack| rack["name"] }
+      body = json(response.body)
+      bike_rack_names = body.map { |rack| rack[:name] }
 
       expect(bike_rack_names).to match_array(
         ["Metro Center Metro Station", "Columbia Heights Metro Station"])
