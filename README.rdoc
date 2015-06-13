@@ -7,7 +7,13 @@ Things you may want to cover:
 
 * Ruby version
 
-* System dependencies
+This project uses Ruby version 2.2.2 (ruby 2.2.2p95)
+
+* Local Development Configuration
+
+This project assumes the following entry in your `/etc/hosts` file:
+
+127.0.0.1   api.spokespot-dev.com
 
 * Configuration
 
