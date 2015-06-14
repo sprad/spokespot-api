@@ -1,0 +1,114 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://maps.googleapis.com/maps/api/geocode/json?address=1600%20Pennsylvania%20Ave%20NW,%20Washington%20DC%2020502&language=en&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sun, 14 Jun 2015 16:16:20 GMT
+      Expires:
+      - Mon, 15 Jun 2015 16:16:20 GMT
+      Cache-Control:
+      - public, max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alternate-Protocol:
+      - 80:quic,p=0
+      Accept-Ranges:
+      - none
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "1600",
+                       "short_name" : "1600",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Pennsylvania Avenue Northwest",
+                       "short_name" : "Pennsylvania Ave NW",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Northwest Washington",
+                       "short_name" : "Northwest Washington",
+                       "types" : [ "neighborhood", "political" ]
+                    },
+                    {
+                       "long_name" : "Washington",
+                       "short_name" : "D.C.",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "District of Columbia",
+                       "short_name" : "DC",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "20500",
+                       "short_name" : "20500",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "1600 Pennsylvania Avenue Northwest, Washington, DC 20500, USA",
+                 "geometry" : {
+                    "location" : {
+                       "lat" : 38.8976757,
+                       "lng" : -77.03652799999999
+                    },
+                    "location_type" : "ROOFTOP",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 38.8990246802915,
+                          "lng" : -77.03517901970848
+                       },
+                       "southwest" : {
+                          "lat" : 38.8963267197085,
+                          "lng" : -77.0378769802915
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJcw5BAI63t4kRj5qZY1MSyAo",
+                 "types" : [ "street_address" ]
+              }
+           ],
+           "status" : "OK"
+        }
+    http_version: 
+  recorded_at: Sun, 14 Jun 2015 16:16:21 GMT
+recorded_with: VCR 2.9.3

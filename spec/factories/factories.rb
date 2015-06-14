@@ -16,7 +16,6 @@ FactoryGirl.define do
     address "607 13th St. NW"
     zip_code 20005
     count 8
-    type "Unknown"
     latitude 38.898296
     longitude -77.029668
   end
@@ -26,7 +25,6 @@ FactoryGirl.define do
     address "1001 Connecticut Avenue NW"
     zip_code 20036
     count 8
-    type "Unknown"
     latitude 38.902654
     longitude -77.039444
   end
@@ -36,7 +34,6 @@ FactoryGirl.define do
     address "3030 14th St. NW"
     zip_code 20009
     count 4
-    type "Unknown"
     latitude 38.928689
     longitude -77.032610
   end
@@ -48,7 +45,6 @@ FactoryGirl.define do
     state "NY"
     zip_code 10472
     count 1
-    type "Unknown"
     latitude 40.8295586850
     longitude -73.8746687361
   end

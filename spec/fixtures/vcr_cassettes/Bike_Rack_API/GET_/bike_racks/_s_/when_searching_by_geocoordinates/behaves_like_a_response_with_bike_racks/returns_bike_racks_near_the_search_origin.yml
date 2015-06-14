@@ -1,0 +1,369 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://maps.googleapis.com/maps/api/geocode/json?language=en&latlng=38.898748,-77.037684&sensor=false
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json; charset=UTF-8
+      Date:
+      - Sun, 14 Jun 2015 16:16:20 GMT
+      Expires:
+      - Mon, 15 Jun 2015 16:16:20 GMT
+      Cache-Control:
+      - public, max-age=86400
+      Access-Control-Allow-Origin:
+      - "*"
+      Server:
+      - mafe
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Frame-Options:
+      - SAMEORIGIN
+      Alternate-Protocol:
+      - 80:quic,p=0
+      Accept-Ranges:
+      - none
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: |
+        {
+           "results" : [
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "1591-1609",
+                       "short_name" : "1591-1609",
+                       "types" : [ "street_number" ]
+                    },
+                    {
+                       "long_name" : "Pennsylvania Avenue Northwest",
+                       "short_name" : "Pennsylvania Ave NW",
+                       "types" : [ "route" ]
+                    },
+                    {
+                       "long_name" : "Northwest Washington",
+                       "short_name" : "Northwest Washington",
+                       "types" : [ "neighborhood", "political" ]
+                    },
+                    {
+                       "long_name" : "Washington",
+                       "short_name" : "D.C.",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "District of Columbia",
+                       "short_name" : "DC",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    },
+                    {
+                       "long_name" : "20503",
+                       "short_name" : "20503",
+                       "types" : [ "postal_code" ]
+                    }
+                 ],
+                 "formatted_address" : "1591-1609 Pennsylvania Avenue Northwest, Washington, DC 20503, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 38.8987195,
+                          "lng" : -77.03740309999999
+                       },
+                       "southwest" : {
+                          "lat" : 38.8987179,
+                          "lng" : -77.0379902
+                       }
+                    },
+                    "location" : {
+                       "lat" : 38.8987331,
+                       "lng" : -77.03768389999999
+                    },
+                    "location_type" : "RANGE_INTERPOLATED",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 38.9000676802915,
+                          "lng" : -77.03634766970849
+                       },
+                       "southwest" : {
+                          "lat" : 38.8973697197085,
+                          "lng" : -77.0390456302915
+                       }
+                    }
+                 },
+                 "place_id" : "EkIxNTkxLTE2MDkgUGVubnN5bHZhbmlhIEF2ZW51ZSBOb3J0aHdlc3QsIFdhc2hpbmd0b24sIERDIDIwNTAzLCBVU0E",
+                 "types" : [ "street_address" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "Northwest Washington",
+                       "short_name" : "Northwest Washington",
+                       "types" : [ "neighborhood", "political" ]
+                    },
+                    {
+                       "long_name" : "Washington",
+                       "short_name" : "D.C.",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "District of Columbia",
+                       "short_name" : "DC",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Northwest Washington, Washington, DC, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 38.9955566,
+                          "lng" : -77.00605969999999
+                       },
+                       "southwest" : {
+                          "lat" : 38.8891955,
+                          "lng" : -77.1197502
+                       }
+                    },
+                    "location" : {
+                       "lat" : 38.9380912,
+                       "lng" : -77.04493269999999
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 38.9955566,
+                          "lng" : -77.00605969999999
+                       },
+                       "southwest" : {
+                          "lat" : 38.8891955,
+                          "lng" : -77.1197502
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJi7U4CaS3t4kR0m_KoPJ00Bw",
+                 "types" : [ "neighborhood", "political" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "Washington",
+                       "short_name" : "D.C.",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "District of Columbia",
+                       "short_name" : "DC",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Washington, DC, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 38.995548,
+                          "lng" : -76.90939299999999
+                       },
+                       "southwest" : {
+                          "lat" : 38.8031495,
+                          "lng" : -77.11973999999999
+                       }
+                    },
+                    "location" : {
+                       "lat" : 38.9071923,
+                       "lng" : -77.03687069999999
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 38.995548,
+                          "lng" : -76.90939299999999
+                       },
+                       "southwest" : {
+                          "lat" : 38.8031495,
+                          "lng" : -77.11973999999999
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJW-T2Wt7Gt4kRKl2I1CJFUsI",
+                 "types" : [ "locality", "political" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "20502",
+                       "short_name" : "20502",
+                       "types" : [ "postal_code" ]
+                    },
+                    {
+                       "long_name" : "Northwest Washington",
+                       "short_name" : "Northwest Washington",
+                       "types" : [ "neighborhood", "political" ]
+                    },
+                    {
+                       "long_name" : "Washington",
+                       "short_name" : "D.C.",
+                       "types" : [ "locality", "political" ]
+                    },
+                    {
+                       "long_name" : "District of Columbia",
+                       "short_name" : "DC",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "Washington, DC 20502, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 38.898761,
+                          "lng" : -77.03386789999999
+                       },
+                       "southwest" : {
+                          "lat" : 38.8926099,
+                          "lng" : -77.03848579999999
+                       }
+                    },
+                    "location" : {
+                       "lat" : 38.8967584,
+                       "lng" : -77.03701629999999
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 38.898761,
+                          "lng" : -77.03386789999999
+                       },
+                       "southwest" : {
+                          "lat" : 38.8926099,
+                          "lng" : -77.03848579999999
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJFfZlI6O3t4kRT21JVHxrwx4",
+                 "types" : [ "postal_code" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "District of Columbia",
+                       "short_name" : "DC",
+                       "types" : [ "administrative_area_level_1", "political" ]
+                    },
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "District of Columbia, USA",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 38.995548,
+                          "lng" : -76.90939299999999
+                       },
+                       "southwest" : {
+                          "lat" : 38.8031495,
+                          "lng" : -77.11973999999999
+                       }
+                    },
+                    "location" : {
+                       "lat" : 38.9059849,
+                       "lng" : -77.03341790000002
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 38.995548,
+                          "lng" : -76.90939299999999
+                       },
+                       "southwest" : {
+                          "lat" : 38.8031495,
+                          "lng" : -77.11973999999999
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJW-T2Wt7Gt4kRmKFUAsCO4tY",
+                 "types" : [ "administrative_area_level_1", "political" ]
+              },
+              {
+                 "address_components" : [
+                    {
+                       "long_name" : "United States",
+                       "short_name" : "US",
+                       "types" : [ "country", "political" ]
+                    }
+                 ],
+                 "formatted_address" : "United States",
+                 "geometry" : {
+                    "bounds" : {
+                       "northeast" : {
+                          "lat" : 71.3867745,
+                          "lng" : -66.885417
+                       },
+                       "southwest" : {
+                          "lat" : 18.9110642,
+                          "lng" : 172.4458955
+                       }
+                    },
+                    "location" : {
+                       "lat" : 37.09024,
+                       "lng" : -95.712891
+                    },
+                    "location_type" : "APPROXIMATE",
+                    "viewport" : {
+                       "northeast" : {
+                          "lat" : 49.38,
+                          "lng" : -66.94
+                       },
+                       "southwest" : {
+                          "lat" : 25.82,
+                          "lng" : -124.39
+                       }
+                    }
+                 },
+                 "place_id" : "ChIJCzYy5IS16lQRQrfeQ5K5Oxw",
+                 "types" : [ "country", "political" ]
+              }
+           ],
+           "status" : "OK"
+        }
+    http_version: 
+  recorded_at: Sun, 14 Jun 2015 16:16:21 GMT
+recorded_with: VCR 2.9.3

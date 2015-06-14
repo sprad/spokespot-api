@@ -48,7 +48,7 @@ RSpec.describe "Bike Rack API", :type => :request do
   let!(:columbia_heights_bike_rack) {
     FactoryGirl.create(:columbia_heights_bike_rack) }
 
-  describe "GET /bike_racks/?s=" do
+  describe "GET /bike_racks/?s=", :vcr do
 
     context "when searching by geocoordinates" do
       white_house_geocordinates = "38.898748,-77.037684"

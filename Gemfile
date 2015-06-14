@@ -53,3 +53,12 @@ group :development, :test do
   gem 'factory_girl_rails'
 end
 
+group :test do
+  # For mocking web requests in the test environment
+  gem 'webmock'
+
+  # For recording live web requests and then playing them back later without
+  # using an actual internet connection.
+  gem 'vcr'
+end
+

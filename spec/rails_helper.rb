@@ -53,4 +53,8 @@ RSpec.configure do |config|
 
   # Include the Spec helper methods defined in the spec/support directory.
   config.include Helpers
+
+  # Prevent making any HTTP calls when in test mode.  Only calls from
+  # localhost are allowed.
+  WebMock.disable_net_connect!(allow_localhost: true)   
 end
