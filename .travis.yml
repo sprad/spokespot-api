@@ -1,0 +1,12 @@
+language: ruby
+rvm:
+ - "2.2.2"
+
+before_script:
+  - psql -c 'create database "spokespot_api_test";' -U postgres
+
+addons:
+  # Only Postgres version 9.3 is supported by Travis, but the target
+  # deployment version is 9.4.  Just FYI, this might cause problems
+  # in the future.
+  postgresql: "9.3"  

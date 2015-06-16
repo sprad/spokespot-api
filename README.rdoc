@@ -27,7 +27,9 @@ This project assumes the following entry in your `/etc/hosts` file:
 
 * Deployment instructions
 
-* ...
+* Code Status
+
+{<img src="https://travis-ci.org/sprad/spokespot-api.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/sprad/spokespot-api]
 
 
 Please feel free to use a different markup language if you do not plan to run
