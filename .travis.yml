@@ -1,12 +1,13 @@
 language: ruby
 rvm:
- - "2.2.2"
-
+- 2.2.2
 before_script:
-  - psql -c 'create database "spokespot_api_test";' -U postgres
-
+- psql -c 'create database "spokespot_api_test";' -U postgres
 addons:
-  # Only Postgres version 9.3 is supported by Travis, but the target
-  # deployment version is 9.4.  Just FYI, this might cause problems
-  # in the future.
-  postgresql: "9.3"  
+  # Only Postgres version 9.3 is supported by Travis, but the target deployment
+  # version is 9.4.  Just FYI, this might cause problems in the future.
+  postgresql: '9.3'
+  code_climate:
+    repo_token:
+      # Encrypt the Code Climate Key for security: http://docs.travis-ci.com/user/encryption-keys/
+      secure: 'WQzFpRBdLUeKKnUK9Bhlg2HhpCyDUUw4uRhKy/ANTyd5GjDZ1jpueXDG7lP6fdkgjbR9+L5W51HBa5OucQ9QmLiMUVIxrC6zRVMYpOrcb33jTAFgLH0s8zVfihYwugioKAiiDOfdhb98p1nYitP8wdXiWyPFTJrUWCrSM9bo7eopgMZ5WGIjQvOssyhXsQx/NwWomzzvxf8d6JjSQCGNrcO8DYxr3kOG7yzMmpavwsw+ACyQ8fbQKFpb0nyFRw2f9CwZzh6C18LbuGoB1mjXoos0PGgLZ0ck85MwaHb8BieZw2wIGPf6lTjPVBjDniZTHTR+WY4ckb7bvSOdLjAgd9daFonbU1qMR29nhCffuluHaMXqVZE/1frCEUeiTSFRG1UlvMsOu6y8JfkpCGB5/0OYzxRvkIL8LTzNxWJfpuaGiNjTJoLqB2HN6sc3T2VZMWnTFJWSK6Iibgu4s5kkuf7yXhnj8+9HI5wrG+ToymYiTS63/QAmK74fsQO7pqC1Y+oWr5/w2cmTHS8N1uhXJbo/A4WIXQixETbZVDZmVjvdxI1HV4Czt3/nzmLXY8CSjeAnyHWEDCnHaY/+g97sEQ3WCddW9G66rX8TkWN9vmKHyOelGqEsANRfZ7sLd6JhmWlGkcqHCT5VADdp0vNs+obXqqf0LOMQ0dRKnky5c/M='

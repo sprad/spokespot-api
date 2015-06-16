@@ -47,5 +47,8 @@ group :test do
   # For recording live web requests and then playing them back later without
   # using an actual internet connection.
   gem 'vcr'
+
+  # For gathering code coverage metrics
+  gem "codeclimate-test-reporter", require: nil
 end
 

@@ -56,5 +56,6 @@ RSpec.configure do |config|
 
   # Prevent making any HTTP calls when in test mode.  Only calls from
   # localhost are allowed.
-  WebMock.disable_net_connect!(allow_localhost: true)   
+  WebMock.disable_net_connect!(allow_localhost: true,
+                               allow: %w{codeclimate.com})   
 end

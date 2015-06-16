@@ -29,8 +29,7 @@ This project assumes the following entry in your `/etc/hosts` file:
 
 * Code Status
 
-{<img src="https://travis-ci.org/sprad/spokespot-api.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/sprad/spokespot-api]
-
+{<img src="https://travis-ci.org/sprad/spokespot-api.svg?branch=master" alt="Build Status" />}[https://travis-ci.org/sprad/spokespot-api] {<img src="https://codeclimate.com/github/sprad/spokespot-api/badges/gpa.svg" />}[https://codeclimate.com/github/sprad/spokespot-api] {<img src="https://codeclimate.com/github/sprad/spokespot-api/badges/coverage.svg" />}[https://codeclimate.com/github/sprad/spokespot-api/coverage]
 
 Please feel free to use a different markup language if you do not plan to run
 <tt>rake doc:app</tt>.
