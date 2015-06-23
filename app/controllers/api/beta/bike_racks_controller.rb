@@ -1,4 +1,4 @@
-module API::V1
+module API::Beta
   class BikeRacksController < ApplicationController
     respond_to :json
 

@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.shared_examples "a response with no bike racks" do |search_string|
   it "does not return any bike racks" do
-    get "/v1/bike_racks/?s=#{search_string}", {}, { 'Accept' => Mime::JSON }
+    get "/beta/bike_racks/?s=#{search_string}", {}, { 'Accept' => Mime::JSON }
 
     expect(response).to have_http_status(:success)
     expect(response.content_type).to eq Mime::JSON
@@ -12,7 +12,7 @@ end
 
 RSpec.shared_examples "a response with bike racks" do |search_string|
   it "returns bike racks near the search origin" do
-    get "/v1/bike_racks/?s=#{search_string}", {}, { 'Accept' => Mime::JSON }
+    get "/beta/bike_racks/?s=#{search_string}", {}, { 'Accept' => Mime::JSON }
 
     body = json(response.body)
     bike_rack_names = body.map { |rack| rack[:name] }
