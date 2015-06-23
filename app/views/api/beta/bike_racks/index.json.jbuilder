@@ -5,7 +5,6 @@ json.array!(@bike_racks,
   :state,
   :zip_code,
   :count,
-  :type,
   :latitude,
   :longitude
 ) 

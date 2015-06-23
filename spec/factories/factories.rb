@@ -6,7 +6,6 @@ FactoryGirl.define do
     state "DC"
     zip_code 20001
     count 10
-    type "Unknown"
     latitude 38.904722
     longitude -77.016389
   end
