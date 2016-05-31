@@ -1,4 +1,5 @@
 json.array!(@bike_racks,
+  :id,
   :name,
   :address,
   :city,
